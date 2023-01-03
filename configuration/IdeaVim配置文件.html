@@ -1,0 +1,545 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>IdeaVim · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vimrc配置文件.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    开发中的配置文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="IdeaVim配置文件.html">
+            
+                <a href="IdeaVim配置文件.html">
+            
+                    
+                    IdeaVim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="vimrc配置文件.html">
+            
+                <a href="vimrc配置文件.html">
+            
+                    
+                    vimrc配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="bashprofile配置文件.html">
+            
+                <a href="bashprofile配置文件.html">
+            
+                    
+                    bashprofile配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="zshrc配置文件.html">
+            
+                <a href="zshrc配置文件.html">
+            
+                    
+                    zshrc配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >IdeaVim</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ideavim">IdeaVim</h1>
+<p>&#x5F53;&#x524D;&#x6240;&#x4F7F;&#x7528;ideavim&#x63D2;&#x4EF6;&#x7684;&#x914D;&#x7F6E;&#x5982;&#x4E0B;  </p>
+<pre><code>&quot;&quot;&quot; Common settings -------------------------
+&quot; &#x8BBE;&#x7F6E;leader&#x952E;&quot;
+let mapleader=&quot; &quot;
+&quot;&#x8BBE;&#x7F6E;vv &#x4E3A;esc&#x952E;
+inoremap vv &lt;esc&gt;
+
+set showmode
+&quot; &#x5C4F;&#x5E55;&#x6EDA;&#x52A8;&#x65F6;&#x5728;&#x5149;&#x6807;&#x4E0A;&#x4E0B;&#x65B9;&#x4FDD;&#x7559;5&#x884C;&#x9884;&#x89C8;&#x4EE3;&#x7801;
+set so=5
+&quot; &#x53D6;&#x6D88;&#x9AD8;&#x4EAE;
+&quot; &#x8BBE;&#x7F6E;&#x5BFB;&#x627E;&#x9AD8;&#x4EAE;
+set hlsearch
+set incsearch
+&quot; &#x8BBE;&#x7F6E;&#x5B57;&#x4E0D;&#x8D85;&#x8FC7;&#x7A97;&#x53E3;
+set wrap
+&quot; &#x7A81;&#x51FA;&#x6C34;&#x5E73;&#x663E;&#x793A;
+set cursorline
+&quot; &#x4E0B;&#x4E00;&#x884C;&#x548C;&#x4E0A;&#x4E00;&#x884C;&#x7684;&#x683C;&#x5F0F;&#x76F8;&#x540C;
+set autoindent
+set cindent
+&quot; &#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x5206;&#x5C4F;&#x65B9;&#x5411;
+set splitright
+set splitbelow
+&quot; &#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;
+set ignorecase
+&quot; &#x53D6;&#x6D88;&#x9AD8;&#x4EAE;
+nnoremap &lt;leader&gt;sc :nohlsearch&lt;Cr&gt;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;UI&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot; change colorscheme
+nnoremap &lt;leader&gt;fc :action QuickChangeScheme&lt;CR&gt;
+&quot; &#x6539;&#x53D8;&#x89C6;&#x56FE;
+nnoremap &lt;leader&gt;cv :action ChangeView&lt;CR&gt;
+set nu
+&quot; &#x9632;&#x6B62;&#x6309;leader&#x952E;&#x4E71;&#x79FB;&#x52A8;
+nnoremap &lt;SPACE&gt; &lt;nop&gt;
+set number
+&quot;set relativenumber
+&quot;&quot;&quot; Idea specific settings ------------------
+&quot;set ideajoin
+&quot;set ideastatusicon=gray
+
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;Plugins&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+set surround
+set multiple-cursors
+set commentary &quot;&#x80FD;&#x7528;gcc gc+motion&#x6765;&#x6CE8;&#x91CA;&#x4EE3;&#x7801;
+&quot;set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+set exchange
+set NERDTree
+set highlightedyank
+&quot;&quot;&quot; Strict mode for development ---------------
+set ideastrictmode
+set keep-english-in-normal-and-restore-in-insert
+&quot;&quot;&quot; Plugin settings -------------------------
+let g:argtextobj_pairs=&quot;[:],(:),&lt;:&gt;&quot;
+
+&quot; &lt;C-n&gt; seems to me as a better solution than &lt;M-n&gt;,
+&quot; but we should finally support vim-visual-multi because vim-multiple-cursors is deprecated now
+map &lt;C-n&gt; &lt;Plug&gt;NextWholeOccurrence
+
+&quot; ===
+&quot; === NERDTree
+&quot; ===
+&quot;&quot;&quot;&quot;Usage&quot;&quot;&quot;&quot;
+&quot; o &lt;key&gt; open menu in NERDTree
+&quot; O &lt;key&gt; Recursively open the selected directory
+&quot; i &lt;key&gt; Open selected file in a split window (horizontal)
+&quot; gi &lt;key&gt; Same as i, but leave the cursor on the NERDTree
+&quot; s &lt;key&gt; Open selected file in a new vsplit
+&quot; gs &lt;key&gt; Same as s, but leave the cursor on the NERDTree
+&quot; m &lt;key&gt; open menu in NERDTree
+&quot; A &lt;key&gt; Zoom (maximize/minimize) the NERDTree window&quot;
+&quot; K &lt;key&gt; Jump up inside directories at the current tree depth
+&quot; J &lt;key&gt; Jump down inside directories at the current tree depth
+&quot; x &lt;key&gt; Close the current nodes parent (not close flie)
+&quot; X &lt;key&gt; Recursively close all children of the current node (not close flie)
+&quot;&quot;&quot;&quot;End&quot;&quot;&quot;&quot;
+&quot; open NERDTree
+nnoremap &lt;leader&gt;e :NERDTree&lt;CR&gt;
+&quot; ===
+&quot; === AceJump
+&quot; ===
+&quot; Press `f` to activate AceJump
+map f :action AceAction&lt;CR&gt;
+&quot; Press `F` to activate Target Mode
+map F :action AceTargetAction&lt;CR&gt;
+
+
+
+&quot; &#x53D6;&#x6D88;vim s&#x952E;&#x539F;&#x751F;&#x6620;&#x5C04;
+nnoremap s &lt;Nop&gt;
+vnoremap s &lt;Nop&gt;
+&quot; &#x5FEB;&#x901F;&#x5173;&#x95ED;buffers
+nnoremap X :q&lt;cr&gt;
+&quot; &#x4F7F;&#x7528;tab&#x952E;&#x5FEB;&#x901F;&#x5207;&#x6362;buffers
+nnoremap &lt;TAB&gt; gt
+nnoremap &lt;S-TAB&gt; gT
+vnoremap &lt;TAB&gt; gt
+vnoremap &lt;S-TAB&gt; gT
+&quot; &#x5DE6;&#x53F3;&#x79FB;&#x52A8;&#x89C6;&#x91CE;
+nnoremap zh 50zh
+nnoremap zl 50zl
+&quot; &#x50CF;vscode&#x4E00;&#x6837;&#x884C;&#x79FB;&#x52A8;
+vnoremap J :action MoveLineDown&lt;CR&gt;
+vnoremap K :action MoveLineUp&lt;CR&gt;
+&quot; &#x591A;&#x884C;&#x7F29;&#x8FDB;&#x5728;visual mode
+vnoremap &gt; &gt;gv
+vnoremap &lt; &lt;gv
+&quot; &#x590D;&#x5236;&#x7C98;&#x8D34;&#x526A;&#x8D34;&#x677F;
+nnoremap &lt;leader&gt;y &quot;+y
+nnoremap &lt;leader&gt;p &quot;+p
+nnoremap &lt;leader&gt;P &quot;+P
+vnoremap &lt;leader&gt;y &quot;+y
+vnoremap &lt;leader&gt;p &quot;+p
+vnoremap &lt;leader&gt;P &quot;+p
+&quot; &#x5FEB;&#x901F;&#x590D;&#x5236;&#x5230;&#x884C;&#x5C3E;
+vnoremap Y y$
+nnoremap Y y$
+&quot; &#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x5FEB;&#x901F;&#x79FB;&#x52A8;
+inoremap &lt;C-a&gt; &lt;Home&gt;
+inoremap &lt;C-e&gt; &lt;End&gt;
+&quot; &#x5176;&#x4ED6;&#x6A21;&#x5F0F;&#x5FEB;&#x901F;&#x79FB;&#x52A8;
+nnoremap H ^
+nnoremap L $
+vnoremap H ^
+vnoremap L $
+&quot; &#x540E;&#x9000;&#x529F;&#x80FD;
+nnoremap &lt;leader&gt;gb :action Back&lt;CR&gt;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;Debug&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot; &#x6253;&#x4E0A;&#x65AD;&#x70B9;&#x6216;&#x53D6;&#x6D88;&#x65AD;&#x70B9;
+nnoremap &lt;leader&gt;dt :action ToggleLineBreakpoint&lt;CR&gt;
+&quot; &#x53D6;&#x6D88;&#x6240;&#x6709;&#x7684;&#x65AD;&#x70B9;
+nnoremap &lt;leader&gt;dT :action Debugger.RemoveAllBreakpointsInFile&lt;CR&gt;
+&quot; debug&#x4E0A;&#x6B21;&#x8FD0;&#x884C;&#x7684;&#x7C7B;
+nnoremap &lt;leader&gt;dd :action Debug&lt;CR&gt;
+&quot; debug&#x5F53;&#x524D;(now)&#x7C7B;
+nnoremap &lt;leader&gt;dc :action DebugClass&lt;CR&gt;
+&quot; debug&#x795E;&#x5668;
+&quot; StepInto (F7)
+nnoremap &lt;leader&gt;di :action ForceStepInto&lt;CR&gt;
+&quot; ForceStepInto(CMD + SHIFT + F7)
+nnoremap &lt;leader&gt;dI :action ForceStepInto
+&quot; StepOver (F8)
+nnoremap &lt;leader&gt;do :action StepOver&lt;CR&gt;
+&quot; Resume (&#x8DF3;&#x5230;&#x4E0B;&#x4E2A;&#x65AD;&#x70B9;&#x8FD0;&#x884C;)
+nnoremap &lt;leader&gt;dr :action Resume&lt;CR&gt;
+&quot; StepOut (SHIFT+F8)
+nnoremap &lt;leader&gt;du :action StepOut&lt;CR&gt;
+&quot; debug&#x5F3A;&#x5236;&#x8FD0;&#x884C;&#x5230;&#x5149;&#x6807;&#x5904;
+nnoremap &lt;leader&gt;dC :action ForceRunToCursor&lt;CR&gt;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;Create&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot; &#x65B0;&#x5EFA;&#x7C7B;
+nnoremap &lt;leader&gt;nc :action NewClass&lt;CR&gt;
+&quot; &#x65B0;&#x5EFA;&#x9879;&#x76EE;
+nnoremap &lt;leader&gt;np :action NewProject&lt;CR&gt;
+&quot; &#x65B0;&#x5EFA;&#x6587;&#x4EF6; (&#x563B;&#x563B;,&#x5565;&#x90FD;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x5FEB;&#x6377;&#x952E;&#x5EFA;&#x7ACB;,&#x4E00;&#x4E2A;&#x5B57;&#x723D;)
+nnoremap &lt;leader&gt;ne :action NewElement&lt;CR&gt;
+&quot; &#x5220;&#x9664;&#x5F53;&#x524D;&#x6587;&#x4EF6; (&#x5FEB;&#x901F;&#x5220;&#x9664;)
+nnoremap &lt;leader&gt;nd :action SafeDelete&lt;CR&gt;
+&quot; &#x590D;&#x5236;&#x6587;&#x4EF6;&#x5143;&#x7D20;
+nnoremap &lt;leader&gt;ny :action CopyElement&lt;CR&gt;
+&quot; &#x4EE3;&#x7801;&#x73AF;&#x7ED5;(&#x5FEB;&#x901F;&#x6DFB;&#x52A0;if &#x6216;&#x8005;while)
+nnoremap &lt;leader&gt;ns :action SurroundWith&lt;CR&gt;
+vnoremap &lt;leader&gt;ns :action SurroundWith&lt;CR&gt;
+&quot; &#x5C06;&#x9009;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x65B9;&#x6CD5;
+nnoremap &lt;Leader&gt;nf :action ExtractMethod&lt;CR&gt;
+
+
+
+&quot;&quot;&quot; My Mappings -----------------------------
+
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&#x8DF3;&#x8F6C;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+&quot;&#x8DF3;&#x8F6C;&#x5230;Action
+nnoremap &lt;Leader&gt;ga :action GotoAction&lt;CR&gt;
+
+&quot;&#x8DF3;&#x8F6C;&#x5230;&#x5B9E;&#x4F53;&#x7C7B;
+nnoremap &lt;Leader&gt;gc :action GotoClass&lt;CR&gt;
+&quot;&#x8DF3;&#x8F6C;&#x5230;&#x58F0;&#x660E;
+nnoremap &lt;Leader&gt;gd :action GotoDeclaration&lt;CR&gt;
+
+&quot;&#x8DF3;&#x8F6C;&#x5230;&#x6587;&#x4EF6;
+nnoremap &lt;Leader&gt;gf :action GotoFile&lt;CR&gt;
+&quot;&#x8DF3;&#x8F6C;&#x5230;&#x5B9E;&#x73B0;&#x7C7B;
+nnoremap &lt;Leader&gt;gi :action GotoImplementation&lt;CR&gt;
+
+&quot;&#x8DF3;&#x8F6C;&#x5230;&#x9519;&#x8BEF;
+map &lt;leader&gt;ge &lt;Action&gt;(GotoNextError)
+
+&quot; project search &#x76F8;&#x5F53;&#x4E8E;IDEA&#x7684;&#x4E24;&#x6B21;shift&#x6309;&#x94AE;
+nnoremap &lt;Leader&gt;se :action SearchEverywhere&lt;CR&gt;
+nnoremap &lt;Leader&gt;fp :action FindInPath&lt;CR&gt;
+&quot;&#x67E5;&#x627E;&#x7528;&#x6CD5;
+nnoremap &lt;Leader&gt;fu :action FindUsages&lt;CR&gt;
+
+
+&quot;&#x663E;&#x793A;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;
+nnoremap &lt;Leader&gt;sp :action ShowFilePath&lt;CR&gt;
+
+&quot;&#x4FEE;&#x6539;&#x6240;&#x6709;&#x7684;&#x5173;&#x8054;&#x540D;&#x5B57;
+nnoremap &lt;Leader&gt;re :action RenameElement&lt;CR&gt;
+
+&quot;&#x4FEE;&#x6539;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x540D;
+nnoremap &lt;Leader&gt;rf :action RenameFile&lt;CR&gt;
+&quot;&#x663E;&#x793A;&#x4F7F;&#x7528;
+nnoremap &lt;Leader&gt;su :action ShowUsages&lt;CR&gt;
+&quot;&#x6E05;&#x7406;&#x4E0D;&#x7528;&#x7684;import
+nnoremap &lt;Leader&gt;oi :action OptimizeImports&lt;CR&gt;
+
+
+
+&quot;&#x5173;&#x95ED;&#x6D3B;&#x52A8;&#x663E;&#x793A;&#x677F;
+nnoremap &lt;Leader&gt;tc :action CloseActiveTab&lt;CR&gt;
+&quot;clean project
+nnoremap &lt;Leader&gt;cp :action CleanGradleProject&lt;CR&gt;
+
+map &lt;leader&gt;rd &lt;Action&gt;(Debug)
+map &lt;leader&gt;st &lt;Action&gt;(StopBackgroundProcesses)
+map &lt;leader&gt;rp &lt;Action&gt;(Run)
+map &lt;leader&gt;z &lt;Action&gt;(ToggleDistractionFreeMode)
+map &lt;leader&gt;rc &lt;Action&gt;(ReformatCode)
+
+map &lt;leader&gt;sp &lt;Action&gt;(SelectInProjectView)
+map &lt;leader&gt;a &lt;Action&gt;(Annotate)
+map &lt;leader&gt;h &lt;Action&gt;(Vcs.ShowTabbedFileHistory)
+
+&quot; built in search looks better
+&quot; (&#x67E5;&#x627E;&#x5B57;&#x7B26;&#x4E32;)
+nnoremap / :action Find&lt;CR&gt;
+
+&quot;&#x7FFB;&#x8BD1;&#x5355;&#x8BCD;
+nnoremap &lt;Leader&gt;tw :action Translate&lt;CR&gt;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 开发中的配置文件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vimrc配置文件.html" class="navigation navigation-next " aria-label="Next page: vimrc配置文件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"IdeaVim","level":"1.2.1","depth":2,"next":{"title":"vimrc配置文件","level":"1.2.2","depth":2,"path":"configuration/vimrc配置文件.md","ref":"configuration/vimrc配置文件.md","articles":[]},"previous":{"title":"开发中的配置文件","level":"1.2","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"IdeaVim","level":"1.2.1","depth":2,"path":"configuration/IdeaVim配置文件.md","ref":"configuration/IdeaVim配置文件.md","articles":[]},{"title":"vimrc配置文件","level":"1.2.2","depth":2,"path":"configuration/vimrc配置文件.md","ref":"configuration/vimrc配置文件.md","articles":[]},{"title":"bashprofile配置文件","level":"1.2.3","depth":2,"path":"configuration/bashprofile配置文件.md","ref":"configuration/bashprofile配置文件.md","articles":[]},{"title":"zshrc配置文件","level":"1.2.4","depth":2,"path":"configuration/zshrc配置文件.md","ref":"configuration/zshrc配置文件.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"configuration/IdeaVim配置文件.md","mtime":"2023-01-03T14:37:22.201Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-01-03T14:45:58.114Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
