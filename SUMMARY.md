@@ -1,7 +1,7 @@
 # Summary
 
 * [前言](README.md)
-* [开发中的配置文件]
+* [开发中的配置文件](README.md)
     * [IdeaVim](configuration/IdeaVim配置文件.md)
     * [vimrc配置文件](configuration/vimrc配置文件.md)
     * [bashprofile配置文件](configuration/bashprofile配置文件.md)
